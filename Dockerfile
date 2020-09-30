@@ -6,3 +6,7 @@ RUN apt-get install -y net-tools
 
 COPY ./better-top-cpu.sh ./
 COPY ./better-top-memory.sh ./
+
+COPY ./oracle_driver.sh ./
+RUN chmod +x oracle_driver.sh
+RUN ./oracle_driver.sh
